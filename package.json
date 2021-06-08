@@ -1,0 +1,17 @@
+{
+  "name": "codecov-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yurii-sorokin/codecov-demo.git",
+  "author": "Yurii Sorokin <yurii.sorokin@q4inc.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest --coverage --ci"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  }
+}
