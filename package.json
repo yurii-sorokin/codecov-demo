@@ -2,7 +2,6 @@
   "private": true,
   "name": "codecov-demo",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:yurii-sorokin/codecov-demo.git",
   "author": "Yurii Sorokin <yurii.sorokin@q4inc.com>",
   "license": "UNLICENSED",

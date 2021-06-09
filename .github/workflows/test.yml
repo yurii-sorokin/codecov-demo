@@ -32,3 +32,8 @@ jobs:
           verbose: true
           directory: ./packages/package-b/coverage
           flags: project-a,unit
+
+      - uses: codacy/codacy-coverage-reporter-action@v1
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: ./packages/package-a/coverage/lcov.info,./packages/package-b/coverage/lcov.info
