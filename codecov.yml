@@ -1,0 +1,12 @@
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+        target: auto
+        threshold: 5%
+    patch:
+      default:
+        informational: true
+comment:
+  layout: 'reach, diff, flags'
