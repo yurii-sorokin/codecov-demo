@@ -1,3 +1,16 @@
+coverage:
+  status:
+    project:
+      default:
+        informational: true
+      project-a:
+        flags: project-a
+      project-b:
+        flags: project-b
+    patch:
+      default:
+        informational: true
+
 flags:
   package-a:
     paths:
@@ -7,19 +20,6 @@ flags:
     paths:
       - packages/package-b
     carryforward: true
-coverage:
-  status:
-    project:
-      default:
-        informational: true
-        target: auto
-        threshold: 5%
-      project-a:
-        flags: project-a
-      project-b:
-        flags: project-b
-    patch:
-      default:
-        informational: true
+
 comment:
   layout: 'reach, diff, flags'

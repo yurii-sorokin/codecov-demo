@@ -1,4 +1,4 @@
-import { getParity, isEven } from './parity';
+import { getParity, isEven, isNil } from './parity';
 
 describe('isEven', () => {
   it('returns true for even numbers', () => {
@@ -13,5 +13,19 @@ describe('isEven', () => {
 describe('getParity', () => {
   it('returns "even" for even numbers', () => {
     expect(getParity(4)).toBe('even');
+  });
+});
+
+describe('isNil', () => {
+  it('returns true for null values', () => {
+    expect(isNil(null)).toBe(true);
+  });
+
+  it('returns true for undefined values', () => {
+    expect(isNil(undefined)).toBe(true);
+  });
+
+  it('returns false for defined values', () => {
+    expect(isEven(7)).toBe(false);
   });
 });
