@@ -17,11 +17,20 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: '14'
       - run: yarn install
       - run: yarn test
 
       - uses: codecov/codecov-action@v1
         with:
           verbose: true
-          flags: unittests
+          directory: ./packages/package-a/coverage
+          flags: unittests,project-a
+          name: project-a
+
+      - uses: codecov/codecov-action@v1
+        with:
+          verbose: true
+          directory: ./packages/package-b/coverage
+          flags: unittests,project-b
+          name: project-b
