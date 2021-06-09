@@ -1,4 +1,4 @@
-import { getParity, isEven } from './parity';
+import { getParity, isEven, isOdd } from './parity';
 
 describe('isEven', () => {
   it('returns true for even numbers', () => {
@@ -7,6 +7,16 @@ describe('isEven', () => {
 
   it('returns false for odd numbers', () => {
     expect(isEven(7)).toBe(false);
+  });
+});
+
+describe('isOdd', () => {
+  it('returns false for even numbers', () => {
+    expect(isOdd(4)).toBe(false);
+  });
+
+  it('returns true for odd numbers', () => {
+    expect(isOdd(7)).toBe(true);
   });
 });
 
