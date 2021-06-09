@@ -10,16 +10,6 @@ describe('isEven', () => {
   });
 });
 
-describe('isOdd', () => {
-  it('returns false for even numbers', () => {
-    expect(isOdd(4)).toBe(false);
-  });
-
-  it('returns true for odd numbers', () => {
-    expect(isOdd(7)).toBe(true);
-  });
-});
-
 describe('getParity', () => {
   it('returns "even" for even numbers', () => {
     expect(getParity(4)).toBe('even');
