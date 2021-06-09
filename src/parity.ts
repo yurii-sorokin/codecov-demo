@@ -9,3 +9,7 @@ export function isOdd(value: number) {
 export function getParity(value: number) {
   return isEven(value) ? 'even' : 'odd';
 }
+
+export function isNil(value: unknown) {
+  return value == null;
+}
