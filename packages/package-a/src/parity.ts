@@ -3,7 +3,7 @@ export function isEven(value: number) {
 }
 
 export function isOdd(value: number) {
-  return value % 2 !== 0;
+  return !isEven(value);
 }
 
 export function getParity(value: number) {
@@ -12,4 +12,8 @@ export function getParity(value: number) {
 
 export function isNil(value: unknown) {
   return value == null;
+}
+
+export function isString(value: unknown): value is string {
+  return typeof value === 'string';
 }
